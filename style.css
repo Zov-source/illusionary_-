@@ -1014,3 +1014,184 @@ body.page-leaving {
     transform: none;
   }
 }
+
+
+/* =========================================
+   HERO CHARACTER / PIXEL HELLO
+   ========================================= */
+.hero-art.hero-character {
+  height: 440px;
+  isolation: isolate;
+  overflow: hidden;
+  background: #07111d;
+  border: 1px solid rgba(87, 87, 255, .42);
+  box-shadow: 0 0 28px rgba(23, 23, 255, .12);
+}
+.hero-art.hero-character::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border: 1px solid rgba(100, 210, 255, .28);
+  transform: none;
+  pointer-events: none;
+}
+.hero-character-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+  filter: saturate(.92) contrast(1.02);
+  animation: hero-image-arrive .9s cubic-bezier(.2,.7,.2,1) both;
+}
+.pixel-speech {
+  position: absolute;
+  z-index: 3;
+  top: 9%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 17px 12px;
+  color: #07101b;
+  background: #d8f5ff;
+  border: 3px solid #101a2b;
+  outline: 1px solid #b7efff;
+  box-shadow: 5px 5px 0 #1717ff, 8px 8px 0 rgba(0,0,0,.5);
+  font-family: "Silkscreen", "IBM Plex Mono", monospace;
+  font-size: clamp(13px, 2vw, 18px);
+  line-height: 1.35;
+  letter-spacing: -.04em;
+  image-rendering: pixelated;
+  opacity: 0;
+  transform: translate(9px, 8px) scale(.78);
+  transform-origin: bottom left;
+  animation: pixel-hello-pop .55s cubic-bezier(.18,.85,.28,1.25) .72s forwards;
+}
+.pixel-speech::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  bottom: -13px;
+  width: 15px;
+  height: 13px;
+  background: #d8f5ff;
+  border-left: 3px solid #101a2b;
+  border-bottom: 3px solid #101a2b;
+  transform: skewY(-28deg);
+}
+.pixel-speech::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  bottom: -18px;
+  width: 7px;
+  height: 7px;
+  background: #d8f5ff;
+  border: 2px solid #101a2b;
+}
+.speech-spark {
+  color: #1717ff;
+  font-style: normal;
+  font-size: 12px;
+}
+.hero-image-code {
+  position: absolute;
+  z-index: 2;
+  left: 12px;
+  bottom: 11px;
+  padding: 5px 7px;
+  color: #a7efff;
+  background: rgba(3, 8, 18, .78);
+  border-left: 2px solid #36d9ff;
+  font: 9px "IBM Plex Mono", monospace;
+  letter-spacing: .12em;
+  text-shadow: 0 0 8px rgba(54,217,255,.6);
+}
+@keyframes hero-image-arrive {
+  from { opacity: 0; transform: scale(1.035); filter: saturate(.4) brightness(.65); }
+  to { opacity: 1; transform: scale(1); filter: saturate(.92) brightness(1); }
+}
+@keyframes pixel-hello-pop {
+  0% { opacity: 0; transform: translate(9px, 8px) scale(.78); }
+  70% { opacity: 1; transform: translate(-2px, -2px) scale(1.06); }
+  100% { opacity: 1; transform: translate(0, 0) scale(1); }
+}
+
+/* Prompt detail page entrance: brief scan + staggered content reveal */
+.detail-page .detail-layout {
+  animation: detail-layout-in .65s cubic-bezier(.2,.7,.2,1) both;
+}
+.detail-page .detail-visual {
+  animation: detail-image-in .72s cubic-bezier(.2,.7,.2,1) both;
+}
+.detail-page .detail-copy {
+  animation: detail-copy-in .72s cubic-bezier(.2,.7,.2,1) .1s both;
+}
+.detail-page .prompt-box {
+  position: relative;
+  overflow: hidden;
+  animation: prompt-panel-in .65s ease .24s both;
+}
+.detail-page .prompt-box::after {
+  content: "";
+  position: absolute;
+  inset: -100% 0 auto;
+  height: 65%;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(87,145,255,.13), transparent);
+  animation: prompt-scan 1.05s ease .38s both;
+}
+.detail-page .copy-button {
+  animation: detail-copy-button-in .5s ease .42s both;
+}
+@keyframes detail-layout-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes detail-image-in {
+  from { opacity: 0; transform: translateX(-18px); filter: brightness(.55); }
+  to { opacity: 1; transform: translateX(0); filter: brightness(1); }
+}
+@keyframes detail-copy-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes prompt-panel-in {
+  from { opacity: .35; clip-path: inset(0 0 100% 0); }
+  to { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+@keyframes prompt-scan {
+  to { transform: translateY(260%); }
+}
+@keyframes detail-copy-button-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 760px) {
+  .hero-art.hero-character {
+    height: 290px;
+  }
+  .pixel-speech {
+    top: 7%;
+    right: 4%;
+    padding: 9px 12px 10px;
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-character-image,
+  .pixel-speech,
+  .detail-page .detail-layout,
+  .detail-page .detail-visual,
+  .detail-page .detail-copy,
+  .detail-page .prompt-box,
+  .detail-page .copy-button {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+}
