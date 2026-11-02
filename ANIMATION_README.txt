@@ -9,3 +9,6 @@ Added:
 
 Existing character data, prompts, page content, image files, layout, and visual styling were preserved.
 Upload/replace the files in your GitHub repository with the contents of this ZIP.
+
+Safari back-button fix:
+- Clears the page fade when Safari restores a page from its back-forward cache.
