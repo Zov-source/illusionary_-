@@ -1195,3 +1195,15 @@ body.page-leaving {
     clip-path: none !important;
   }
 }
+
+
+/* Top character image: show the complete illustration without cropping */
+.hero-art.hero-character {
+  background: #05070d;
+}
+.hero-character-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
