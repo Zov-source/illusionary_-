@@ -438,15 +438,19 @@ fetch("characters.json")
     try { alreadySeen = sessionStorage.getItem("illusionary-boot-seen") === "1"; }
     catch (e) {}
     if (alreadySeen || reduceMotion) {
-      boot.classList.add("is-hidden");
-      window.setTimeout(() => boot.remove(), 500);
-    } else {
+  boot.classList.add("is-hidden");
+  boot.remove();
+  document.body.classList.add("home-ready");
+} else {
       try { sessionStorage.setItem("illusionary-boot-seen", "1"); }
       catch (e) {}
-      window.setTimeout(() => {
-        boot.classList.add("is-hidden");
-        window.setTimeout(() => boot.remove(), 500);
-      }, 1550);
+     window.setTimeout(() => {
+  boot.classList.add("is-hidden");
+  window.setTimeout(() => {
+    boot.remove();
+    document.body.classList.add("home-ready");
+  }, 450);
+}, 1550);
     }
   }
 
