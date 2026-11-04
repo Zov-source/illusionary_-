@@ -1261,3 +1261,26 @@ body.page-leaving {
     object-fit: contain;
   }
 }
+
+/* =====================================
+   TOP ANIMATION AFTER LOADING
+   ===================================== */
+
+/* ローディング中はトップの演出を待機 */
+.hero-character-image,
+.pixel-speech {
+  animation-play-state: paused;
+}
+
+/* ローディング終了後にアニメーション開始 */
+body.home-ready .hero-character-image {
+  animation: hero-image-arrive .9s
+    cubic-bezier(.2,.7,.2,1) both;
+  animation-play-state: running;
+}
+
+body.home-ready .pixel-speech {
+  animation: pixel-hello-pop .55s
+    cubic-bezier(.18,.85,.28,1.25) .7s both;
+  animation-play-state: running;
+}
