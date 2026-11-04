@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505"><title>ネヴァン 045 — ILLUSIONARY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page"><div class="scanlines" aria-hidden="true"></div>
+<header class="site-header"><a class="wordmark" href="index.html"><span class="wordmark-symbol">✦</span> ILLUSIONARY<span class="blue">.</span></a><span class="header-note">PROMPT FILE <span class="blue">/ 045</span></span></header>
+<main class="detail-main">
+<a class="back-link" href="index.html">← BACK TO INDEX</a>
+<div class="detail-topline"><span>CHARACTER RECORD / 045</span><span>STATUS: AVAILABLE</span></div>
+<div class="detail-layout">
+  <div class="detail-visual"><img src="images/character-045.jpg" alt="ネヴァン"><div class="image-placeholder"><span>✦</span><small>IMAGE<br>NOT FOUND</small></div></div>
+  <section class="detail-copy">
+    <span class="micro-label">SPECIMEN NO.045</span>
+    <h1>ネヴァン</h1>
+    <div class="prompt-type with-outfit"><span>✦ WITH OUTFIT</span><span>服装込み</span></div>
+    <div class="prompt-label"><span>PROMPT DATA</span><span>TXT / 045</span></div>
+    <div class="prompt-box" id="prompt">masterpiece, best quality, detailed dark fantasy illustration, boy, young boy, childlike proportions, petite slender build, 1.5::almost entirely black appearance::, 1.5::deep matte-black skin::, black hair, short tousled black hair, soft uneven bangs, 1.6::completely black sclera, pure white irises and white pupils::, glowing white eyes against pitch-black sclera, stark monochromatic eyes, thin delicate eyebrows, expressionless face, small nose, subtle dark lips, 1.6::curved black ram horns::, spiral sheep horns curling outward from the head, silver filigree ornaments attached to the horn tips, tiny dangling silver stars, star-shaped black markings, faint glittering stardust around his face, mysterious supernatural child,
+
+oversized black gothic tunic, layered charcoal-black fabrics, high collar covering the neck, long sleeves, silver star embroidery, black shorts, opaque black stockings, black buckled boots, dark silver chains, tiny crescent moon pendant, small star-shaped buttons, silver rings, delicate metallic ornaments, subtle glittering black fabric, monochrome black outfit with sparse silver accents, elegant occult aesthetic,</div>
+    <p class="copy-note" id="prompt-status" aria-live="polite">PROMPT NOT ENTERED</p>
+    <button class="copy-button" id="copy-button" type="button">▣　COPY TO CLIPBOARD ↗</button>
+    <p class="copy-note" id="copy-note" aria-live="polite"></p>
+  </section>
+</div>
+<div class="detail-footer"><span>END OF FILE</span><span>ILLUSIONARY DATABASE © 2026</span></div>
+</main>
+<script>
+const button=document.getElementById("copy-button"), promptText=document.getElementById("prompt").innerText, note=document.getElementById("copy-note");
+button.addEventListener("click",async()=>{if(!promptText.trim()){note.textContent="プロンプトはまだ入力されていません。";return}try{await navigator.clipboard.writeText(promptText);note.textContent="✓ COPIED — PROMPT SAVED TO CLIPBOARD";}catch(e){const area=document.createElement("textarea");area.value=promptText;document.body.appendChild(area);area.select();const ok=document.execCommand("copy");area.remove();note.textContent=ok?"✓ COPIED — PROMPT SAVED TO CLIPBOARD":"コピーできませんでした。プロンプトを長押ししてコピーしてください。";}});
+</script>
+<script>
+(() => {
+  const reduceMotion = window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Terminal boot sequence: once per tab/session on the index page.
+  const boot = document.getElementById("boot-screen");
+  if (boot) {
+    let alreadySeen = false;
+    try { alreadySeen = sessionStorage.getItem("illusionary-boot-seen") === "1"; }
+    catch (e) {}
+    if (alreadySeen || reduceMotion) {
+      boot.classList.add("is-hidden");
+      window.setTimeout(() => boot.remove(), 500);
+    } else {
+      try { sessionStorage.setItem("illusionary-boot-seen", "1"); }
+      catch (e) {}
+      window.setTimeout(() => {
+        boot.classList.add("is-hidden");
+        window.setTimeout(() => boot.remove(), 500);
+      }, 1550);
+    }
+  }
+
+
+  // Safari may restore the previous page from its back-forward cache.
+  // Clear the outgoing-page fade when that happens, or the restored page
+  // can remain fully transparent (a black screen).
+  window.addEventListener("pageshow", () => {
+    document.body.classList.remove("page-leaving");
+    document.body.style.opacity = "1";
+  });
+
+  // Fade between local pages. Hash links, downloads and external links stay native.
+  document.addEventListener("click", event => {
+    const link = event.target.closest("a[href]");
+    if (!link || reduceMotion || event.defaultPrevented ||
+        event.button !== 0 || event.metaKey || event.ctrlKey ||
+        event.shiftKey || event.altKey || link.target === "_blank" ||
+        link.hasAttribute("download")) return;
+
+    const raw = link.getAttribute("href");
+    if (!raw || raw.startsWith("#") || raw.startsWith("mailto:") ||
+        raw.startsWith("tel:") || raw.startsWith("javascript:")) return;
+
+    let destination;
+    try { destination = new URL(raw, window.location.href); }
+    catch (e) { return; }
+    if (destination.origin !== window.location.origin ||
+        destination.pathname === window.location.pathname &&
+        destination.search === window.location.search) return;
+
+    event.preventDefault();
+    document.body.classList.add("page-leaving");
+    window.setTimeout(() => { window.location.href = destination.href; }, 230);
+  });
+})();
+</script>
+
+</body></html>

@@ -1,0 +1,112 @@
+[
+  {
+    "name": "ゼニス",
+    "image": "images/character-041.jpg",
+    "page": "character-041.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, boy, adult male, human, slim androgynous build, pale skin, slightly tired eyes, narrow icy blue eyes, thin well-defined eyebrows, subtle dark circles, emotionless expression, small beauty mark beneath one eye, 1.4::short layered silver-blue hair with deep navy roots::, uneven fringe partially covering one eye, a few thin braided strands decorated with tiny metallic star beads, 1.4::glowing pixelated star-shaped pupils::, faint cyan circuitry tattoo running from temple to neck,\n\nsmall silver ear piercings, futuristic cyberpunk hacker, 1.3::blue and midnight navy color palette::, oversized asymmetrical technical jacket, translucent blue outer panels, high black collar, cropped inner vest, fitted black turtleneck, luminous cyan seams, tiny star-shaped LED fasteners, moon-phase holographic display attached to the chest, layered utility harness, metallic buckles, fingerless gloves with holographic interfaces, one sleek cybernetic wrist device, slim black cargo trousers, asymmetrical thigh straps, translucent panels on one trouser leg, silver chain accessories, futuristic high-top boots, reflective synthetic fabrics, intricate microchip patterns, subtle celestial motifs, sleek urban techwear, understated futuristic fashion, highly detailed clothing construction,"
+  },
+  {
+    "name": "ルクス",
+    "image": "images/character-042.jpg",
+    "page": "character-042.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, boy, adult male, human, tall slender athletic build, sharp elegant facial features, pale cool-toned skin, narrow steel-blue eyes, thin well-defined eyebrows, composed stern expression, straight nose, defined jawline, 1.4::short silver-blue hair swept back with icy blue highlights::, slightly longer strands framing the temples, subtle undercut, 1.3::one cybernetic eye displaying a luminous star map::, tiny constellation-like lights reflected in the other eye, small scar across the left cheek, discreet metallic ear implant, futuristic military officer, elite interstellar defense force commander,\n\n1.4::formal cyberpunk military uniform::, tailored midnight navy officer coat, high structured collar, silver piping, asymmetrical front fastening, fitted black military undershirt, reinforced shoulders, angular cobalt-blue armor plates, luminous cyan insignia, star-shaped electronic medals, holographic rank insignia, silver epaulettes, precision-engineered chest harness, slim utility belt, encrypted communication device clipped to the collar, black tactical gloves, fitted military trousers, polished black combat boots, strapped thigh holster, metallic clasps, intricate circuit patterns woven into the fabric, translucent blue command interface mounted on the wrist, crescent-shaped silver brooch, miniature holographic stars embedded in the uniform, 1.3::midnight blue, cobalt blue and brushed silver color palette::, immaculate uniform, disciplined appearance, authoritative presence,"
+  },
+  {
+    "name": "モルドレク",
+    "image": "images/character-043.jpg",
+    "page": "character-043.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, intricate character design,\nboy, adult male, exceptionally tall, slender elongated physique, pale almost translucent skin, fallen angel unicorn hybrid, corrupted celestial being,\nextremely long jet-black hair reaching below the knees, silky straight hair, center-parted hairstyle, long parted bangs partially obscuring the eyes, long face-framing strands, slightly tangled hair, 1.5::straight hair::,\nsingle long blackened ivory unicorn horn on the forehead, cracked spiral horn, dark veins spreading from the base of the horn, faint decayed halo floating behind the head,\nmouth sewn shut with coarse black thread, tightly stitched lips, uneven stitches, small traces of dried blood around the stitches, thin delicate eyebrows, sunken eyes, muted crimson irises, hollow melancholic gaze, expressionless face,\n\nwearing a decadent black mourning suit, antique gothic formal attire, high-collar black shirt, fitted waistcoat, long distressed tailcoat, frayed fabric edges, tarnished silver embroidery, intricate black lace details, dark burgundy cravat, antique silver chains draped across the chest, black leather gloves, ornamental mourning brooch, slim tailored trousers, worn polished leather boots, luxurious but visibly deteriorated clothing,"
+  },
+  {
+    "name": "スッティ",
+    "image": "images/character-044.jpg",
+    "page": "character-044.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, intricate character design, 1boy, 20-year-old male, 1.3::mischievous imp-like humanoid::, slim build, pale cool-toned skin,\n\n1.5::short messy ash-gray hair, choppy fringe, lime-green streaks::, 1.5::half-lidded droopy eyes, yellow-green irises, mocking gaze::, 1.4::thin asymmetrical eyebrows, one eyebrow raised::, 1.5::crooked smug smirk, one corner of the mouth raised, visible canine tooth::, dark circles, facial bandages, pointed ears, multiple silver piercings, eyebrow piercing,\n\n1.5::oversized washed-black graphic T-shirt, acid-green graffiti, cartoon devil print::, black mesh undershirt, 1.4::distressed dark jeans, ripped knees, hanging silver chains, studded belt::, bulky platform sneakers, mismatched shoelaces, striped socks, fingerless gloves, rubber wristbands, chain necklace, padlock pendant, crossbody utility pouch, prank gadgets, trick coins, playing cards,\n\nrebellious delinquent streetwear, worn textures, charcoal black, ash gray, silver, acid-green accents,"
+  },
+  {
+    "name": "ネヴァン",
+    "image": "images/character-045.jpg",
+    "page": "character-045.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, detailed dark fantasy illustration, boy, young boy, childlike proportions, petite slender build, 1.5::almost entirely black appearance::, 1.5::deep matte-black skin::, black hair, short tousled black hair, soft uneven bangs, 1.6::completely black sclera, pure white irises and white pupils::, glowing white eyes against pitch-black sclera, stark monochromatic eyes, thin delicate eyebrows, expressionless face, small nose, subtle dark lips, 1.6::curved black ram horns::, spiral sheep horns curling outward from the head, silver filigree ornaments attached to the horn tips, tiny dangling silver stars, star-shaped black markings, faint glittering stardust around his face, mysterious supernatural child,\n\noversized black gothic tunic, layered charcoal-black fabrics, high collar covering the neck, long sleeves, silver star embroidery, black shorts, opaque black stockings, black buckled boots, dark silver chains, tiny crescent moon pendant, small star-shaped buttons, silver rings, delicate metallic ornaments, subtle glittering black fabric, monochrome black outfit with sparse silver accents, elegant occult aesthetic,"
+  },
+  {
+    "name": "ミルフィ",
+    "image": "images/character-046.jpg",
+    "page": "character-046.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, detailed illustration, boy, young boy, childlike proportions, petite slender body, 1.4::crystal spirit born from the aurora::, fair luminous skin, soft fluffy pastel blue hair with lavender and mint-green gradients, short layered hair, wispy bangs, sparkling aqua eyes with faceted gemstone-like irises, innocent curious expression, faint blush, 1.4::thin delicate eyebrows::, gentle smile, tiny translucent crystal horns, floating gemstone fragments around his head, subtle iridescent glow, glittering skin highlights,\n\n ornate fantasy prince outfit, oversized ivory blouse, pale blue velvet short jacket, translucent layered cape resembling flowing aurora ribbons, high-waisted shorts, pearl-white stockings, crystal-embellished ankle boots, faceted gemstones set into silver clasps, dangling prism earrings, tiny star-shaped brooch, crystal belt ornaments, sheer fabric with iridescent edges, delicate silver embroidery, scattered glittering particles, elegant childlike silhouette, icy blue, mint green, lavender and opalescent white palette,\n\nluminous fantasy atmosphere, highly detailed crystal textures,"
+  },
+  {
+    "name": "フィズ",
+    "image": "images/character-047.jpg",
+    "page": "character-047.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, detailed illustration, boy, young boy, childlike proportions, petite slender body, 1.4::white flower spirit::, fair delicate skin, soft silver-white fluffy hair, slightly wavy short hair, wispy bangs, large pale green eyes, gentle drooping eyes, innocent curious expression, faint rosy cheeks,\n\n1.5::crown of small white flowers::, delicate white blossoms, tiny green leaves woven into the flower crown, thin well-defined eyebrows, soft gentle smile, subtle pointed ears, tiny white petals caught in his hair, loose ivory linen tunic, delicate embroidered floral patterns, oversized sleeves, pale sage-green ribbon around the waist, layered cream shorts, white knee-high socks, simple brown leather shoes, translucent petal-shaped capelet, tiny embroidered flowers along the hem, small satchel decorated with white blossoms, natural fabrics, soft ivory and pale green color palette, whimsical fairy-tale clothing,\n\ndreamy fairy-tale ambiance, muted greens, ivory whites and pale gold,"
+  },
+  {
+    "name": "ルルゥ",
+    "image": "images/character-048.jpg",
+    "page": "character-048.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, boy, young boy, childlike proportions, 1.4::storybook illustration aesthetic::, 1.3::anthropomorphic silver fox boy::, small fluffy fox ears, soft silver-gray fur, large amber eyes, curious sparkling gaze, small nose, rosy cheeks, playful mischievous smile, thin delicate eyebrows, fluffy ash-gray hair, tousled short hair, uneven bangs, soft curls around the ears, tiny freckles across the nose, fluffy fox tail with a white tip,\n\n1.4::dark forest-green beret::, embroidered tiny golden stars on the beret, pressed flower tucked into the brim, antique brass pin shaped like an open book, oversized cream-colored blouse, forest-green short jacket with decorative brass buttons, oversized sleeves, embroidered botanical patterns, burgundy ribbon tie, high-waisted brown shorts, patterned knee socks, leather ankle boots with buckles, tiny satchel filled with bookmarks, miniature book charms, fingerless knitted gloves, vintage storybook-inspired clothing, layered fabrics, delicate lace trim, muted autumnal color palette, warm cream, moss green, dusty burgundy and antique gold,"
+  },
+  {
+    "name": "キキリ",
+    "image": "images/character-049.jpg",
+    "page": "character-049.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, boy, young boy, childlike proportions, 1.4::magical painting spirit::, small delicate body, soft rounded cheeks, large sparkling turquoise eyes, thin delicate eyebrows, tiny nose, cheerful mischievous smile, faint freckles across the cheeks, fluffy pastel blue hair with butter-yellow tips, tousled short hair, uneven soft bangs, colorful pigment particles clinging to the hair, subtle rainbow shimmer on the skin, crayon-like colored markings on the fingertips,\n\n1.4::oversized cream-colored artist beret::, tiny stitched rainbow patch on the beret, loose cream artist smock, oversized sleeves rolled up unevenly, multicolored crayon stains on the fabric, pastel blue striped shirt, mustard-yellow short overalls, mismatched colorful buttons, stitched patches shaped like stars and clouds, paint-splattered knee socks, canvas sneakers with colored doodles, small canvas satchel filled with chunky wax crayons, colorful crayon sticks tucked into the pockets, miniature paintbrushes tied to the belt, small hand-painted stars along the canvas edges, whimsical art student aesthetic, soft pastel palette, turquoise, butter yellow, coral pink, mint green, creamy ivory, tactile wax textures,"
+  },
+  {
+    "name": "アクタル",
+    "image": "images/character-050.jpg",
+    "page": "character-050.html",
+    "tags": [
+      "OC"
+    ],
+    "gender": "MALE",
+    "promptType": "WITH OUTFIT",
+    "prompt": "masterpiece, best quality, ultra detailed, intricate character design,\n\nboy, adult male, humanoid octopus hybrid, muscular imposing physique, massive broad shoulders, extremely muscular arms, thick chest, defined abs, powerful build, pale cool-toned skin, subtle aquatic features, small subtle gill slits along the neck, deep crimson eyes, narrow sharp gaze, thin delicate eyebrows, mature handsome face,\n\n1.5::very long hair tied in a high ponytail, extremely high ponytail, long flowing ponytail, hair ends transforming into multiple octopus tentacles::, distinctive tentacle-shaped hair tips, curling flexible hair tendrils, rows of tiny suction cups along the tentacle-like hair ends, dark wine-red hair fading into deep purple tips,\n\nornate dark navy military uniform, high-collared officer jacket, structured shoulders, fitted waist emphasizing muscular physique, double-breasted gold buttons, elaborate gold epaulettes, decorative military cords, crimson sash across the chest, black leather belt, polished military boots, white gloves, dark red military insignia, luxurious heavy fabric, authoritative formal military attire,"
+  }
+]
